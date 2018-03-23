@@ -14,23 +14,24 @@ npm i a_design
 ## Usage
 
 This UI library is splitted in two, on one side there are class, the easiest way to use them is to import them
-```
+```styl
 // root_styles_in_your_project.styl
 
 @require 'a_design/styles'
 ```
-Once compiled, you will be able to use any class
+Once compiled, you will be able to use any class (e.g: `_p10`, `_mb20`, ...).
 
 On the other side, if you don't want to use the class but directly some mixins (which will reduce the size of you final css)
-```
+```styl
 // any_file.styl
 
 @import 'a_design/mixins/sizing'
 
 .a-class {
-  ._p10()
+  _p10()
 }
 ```
+Class and Mixins have the same name.
 
 ## Principle
 
