@@ -1,0 +1,16 @@
+// Extends : Colors
+@import './../design.styl'
+
+for $color in $colors {
+  ._bg-{$color} {
+    background lookup('$' + $color)
+  }
+
+  ._bc-{$color} {
+    border-color lookup('$' + $color)
+  }
+
+  ._{$color} {
+    color lookup('$' + $color)
+  }
+}

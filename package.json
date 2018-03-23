@@ -1,0 +1,61 @@
+{
+  "name": "a_design",
+  "version": "1.0.0",
+  "description": "Styles for a UI design",
+  "scripts": {
+    "pretty": "a_codestyle",
+    "commit": "git-cz",
+    "test": "stylus-extra styles",
+    "release": "semantic-release"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretty"
+    }
+  },
+  "homepage": "https://github.com/Alexgalinier/a_design",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexgalinier/a_design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alexgalinier/a_design/issues"
+  },
+  "author": "Alexgalinier",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^2.0.1",
+    "@semantic-release/git": "^4.0.1",
+    "a_codestyle": "^2.0.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.15.0-rc.9",
+    "semantic-release": "^15.0.3",
+    "stylus-extra": "^1.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "publish": [
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ]
+  },
+  "dependencies": {}
+}

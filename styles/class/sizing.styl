@@ -1,0 +1,103 @@
+// Class : Sizing
+@import './../design.styl'
+
+for $size in $fontSizes {
+  _fs{$size} {
+    font-size $size px
+  }
+}
+
+for $border in 1 4 {
+  _b{$border} {
+    border-width $border px
+    border-style solid
+  }
+
+  _bt{$border} {
+    border-top-width $border px
+    border-top-style solid
+  }
+
+  _bb{$border} {
+    border-bottom-width $border px
+    border-bottom-style solid
+  }
+
+  _bl{$border} {
+    border-left-width $border px
+    border-left-style solid
+  }
+
+  _br{$border} {
+    border-right-width $border px
+    border-right-style solid
+  }
+}
+
+_lh1 {
+  line-height 1em
+}
+
+for $margin in $margins {
+  _m{$margin} {
+    margin $margin px
+  }
+
+  _mt{$margin} {
+    margin-top $margin px
+  }
+
+  _mb{$margin} {
+    margin-bottom $margin px
+  }
+
+  _ml{$margin} {
+    margin-left $margin px
+  }
+
+  _mr{$margin} {
+    margin-right $margin px
+  }
+
+  _mtb{$margin} {
+    margin-top $margin px
+    margin-bottom $margin px
+  }
+
+  _mlr{$margin} {
+    margin-right $margin px
+    margin-left $margin px
+  }
+}
+
+for $padding in $paddings {
+  _p{$padding} {
+    padding $padding px
+  }
+
+  _pt{$padding} {
+    padding-top $padding px
+  }
+
+  _pb{$padding} {
+    padding-bottom $padding px
+  }
+
+  _pl{$padding} {
+    padding-left $padding px
+  }
+
+  _pr{$padding} {
+    padding-right $padding px
+  }
+
+  _ptb{$padding} {
+    padding-top $padding px
+    padding-bottom $padding px
+  }
+
+  _plr{$padding} {
+    padding-right $padding px
+    padding-left $padding px
+  }
+}
