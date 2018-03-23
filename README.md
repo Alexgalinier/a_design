@@ -1,4 +1,8 @@
 # a_design
+
+[![Build Status](https://travis-ci.org/Alexgalinier/a_design.svg?branch=master)](https://travis-ci.org/Alexgalinier/a_design)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Alexgalinier/a_design.svg)](https://greenkeeper.io/)
+
 Styles for a UI design
 
 ## Installation
