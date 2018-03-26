@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Styles for a UI design",
   "scripts": {
-    "pretty": "a_codestyle",
+    "pretty": "a_codestyle -i styles/func",
     "commit": "git-cz",
     "test": "stylus-extra styles",
     "release": "semantic-release"
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^2.0.1",
     "@semantic-release/git": "^4.0.1",
-    "a_codestyle": "^2.0.0",
+    "a_codestyle": "^3.0.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.15.0-rc.9",

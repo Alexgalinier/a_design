@@ -1,0 +1,6 @@
+check($val, $list, $label)
+  $res = null
+  $res = $a if $a == $val for $a in $list
+  if $res == null
+    error('[Error-check] ' + $label + ' ' + $val + ' is invalid, accepted values are: ' + $list)
+  return $res

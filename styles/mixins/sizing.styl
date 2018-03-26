@@ -1,87 +1,101 @@
 // Extends : Sizing
 @import './../design.styl'
+@import './../func/check.styl'
 
-for $size in $fontSizes {
-  define('_fs' + $size, @() {
-    font-size $size px
-  })
+// Font-sizes
+_fs($size) {
+  font-size check($size, $fontSizes, 'font-size') px
 }
 
-for $border in 1 4 {
-  define('_b' + $border, @() {
-    border-width $border px
-    border-style solid
-  })
-  define('_bt' + $border, @() {
-    border-top-width $border px
-    border-top-style solid
-  })
-  define('_bb' + $border, @() {
-    border-bottom-width $border px
-    border-bottom-style solid
-  })
-  define('_bl' + $border, @() {
-    border-left-width $border px
-    border-left-style solid
-  })
-  define('_br' + $border, @() {
-    border-right-width $border px
-    border-right-style solid
-  })
+// Borders
+_b($size) {
+  border-width check($size, $borders, 'border-width') px
+  border-style solid
 }
 
+_bt($size) {
+  border-top-width check($size, $borders, 'border-width') px
+  border-top-style solid
+}
+
+_bb($size) {
+  border-bottom-width check($size, $borders, 'border-width') px
+  border-bottom-style solid
+}
+
+_bl($size) {
+  border-left-width check($size, $borders, 'border-width') px
+  border-left-style solid
+}
+
+_br($size) {
+  border-right-width check($size, $borders, 'border-width') px
+  border-right-style solid
+}
+
+// Line-heights
 _lh1() {
   line-height 1em
 }
 
-for $margin in $margins {
-  define('_m' + $margin, @() {
-    margin $margin px
-  })
-  define('_mt' + $margin, @() {
-    margin-top $margin px
-  })
-  define('_mb' + $margin, @() {
-    margin-bottom $margin px
-  })
-  define('_ml' + $margin, @() {
-    margin-left $margin px
-  })
-  define('_mr' + $margin, @() {
-    margin-right $margin px
-  })
-  define('_mtb' + $margin, @() {
-    margin-top $margin px
-    margin-bottom $margin px
-  })
-  define('_mlr' + $margin, @() {
-    margin-right $margin px
-    margin-left $margin px
-  })
+// Margins
+_m($size) {
+  margin check($size, $margins, 'margin') px
 }
 
-for $padding in $paddings {
-  define('_p' + $padding, @() {
-    padding $padding px
-  })
-  define('_pt' + $padding, @() {
-    padding-top $padding px
-  })
-  define('_pb' + $padding, @() {
-    padding-bottom $padding px
-  })
-  define('_pl' + $padding, @() {
-    padding-left $padding px
-  })
-  define('_pr' + $padding, @() {
-    padding-right $padding px
-  })
-  define('_ptb' + $padding, @() {
-    padding-top $padding px
-    padding-bottom $padding px
-  })
-  define('_plr' + $padding, @() {
-    padding-right $padding px
-    padding-left $padding px
-  })
+_mt($size) {
+  margin-top check($size, $margins, 'margin') px
+}
+
+_mb($size) {
+  margin-bottom check($size, $margins, 'margin') px
+}
+
+_ml($size) {
+  margin-left check($size, $margins, 'margin') px
+}
+
+_mr($size) {
+  margin-right check($size, $margins, 'margin') px
+}
+
+_mtb($size) {
+  margin-top check($size, $margins, 'margin') px
+  margin-bottom check($size, $margins, 'margin') px
+}
+
+_mlr($size) {
+  margin-right check($size, $margins, 'margin') px
+  margin-left check($size, $margins, 'margin') px
+}
+
+// Paddings
+_p($size) {
+  padding check($size, $paddings, 'padding') px
+}
+
+_pt($size) {
+  padding-top check($size, $paddings, 'padding') px
+}
+
+_pb($size) {
+  padding-bottom check($size, $paddings, 'padding') px
+}
+
+_pl($size) {
+  padding-left check($size, $paddings, 'padding') px
+}
+
+_pr($size) {
+  padding-right check($size, $paddings, 'padding') px
+}
+
+_ptb($size) {
+  padding-top check($size, $paddings, 'padding') px
+  padding-bottom check($size, $paddings, 'padding') px
+}
+
+_plr($size) {
+  padding-right check($size, $paddings, 'padding') px
+  padding-left check($size, $paddings, 'padding') px
 }
