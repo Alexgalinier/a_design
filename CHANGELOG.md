@@ -1,3 +1,21 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/Alexgalinier/a_design/compare/v1.0.0...v2.0.0) (2018-03-26)
+
+
+### Bug Fixes
+
+* **sizing:** Fix mixin generation error ([e7caa08](https://github.com/Alexgalinier/a_design/commit/e7caa08))
+
+
+### Features
+
+* **mixin:** Use parameters with mixin (helpers) that are checked to ensure only a_design values are ([4c16a82](https://github.com/Alexgalinier/a_design/commit/4c16a82))
+
+
+### BREAKING CHANGES
+
+* **mixin:** Colors doesn't have mixins anymore, we directly use them with variables.
+
 <a name="1.0.0"></a>
 # 1.0.0 (2018-03-23)
 
