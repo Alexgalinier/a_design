@@ -4,3 +4,9 @@ check($val, $list, $label)
   if $res == null
     error('[Error-check] ' + $label + ' ' + $val + ' is invalid, accepted values are: ' + $list)
   return $res
+
+checkVar($name, $label)
+  $res = lookup('$' + $name)
+  if $res == null
+    error('[Error-check] ' + $label + ' ' + $name + ' is an invalid variable')
+  return $res
