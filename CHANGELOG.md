@@ -1,3 +1,11 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/Alexgalinier/a_design/compare/v2.0.0...v2.1.0) (2018-03-27)
+
+
+### Features
+
+* **colors:** Mixins for colors, background and border-color to keep the consistency as for spaces. ([b4fd0f1](https://github.com/Alexgalinier/a_design/commit/b4fd0f1))
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/Alexgalinier/a_design/compare/v1.0.0...v2.0.0) (2018-03-26)
 
