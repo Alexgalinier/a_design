@@ -1,3 +1,16 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/Alexgalinier/a_design/compare/v2.2.0...v3.0.0) (2018-04-04)
+
+
+### Features
+
+* **index:** Create index for class folder in order to import all class with one `[@require](https://github.com/require)` ([3145349](https://github.com/Alexgalinier/a_design/commit/3145349))
+
+
+### BREAKING CHANGES
+
+* **index:** Base has moved to the class folder
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/Alexgalinier/a_design/compare/v2.1.0...v2.2.0) (2018-04-04)
 

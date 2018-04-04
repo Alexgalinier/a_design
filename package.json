@@ -1,6 +1,6 @@
 {
   "name": "a_design",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Styles for a UI design",
   "scripts": {
     "pretty": "a_codestyle -i styles/func",
