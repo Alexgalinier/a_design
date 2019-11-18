@@ -33,7 +33,7 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.15.0-rc.9",
-    "semantic-release": "^15.0.3",
+    "semantic-release": "^15.13.31",
     "stylus-extra": "^1.0.3"
   },
   "config": {
